@@ -8,7 +8,9 @@ def main(hrs, mins, day):
 
     #How many mins before class starts do you want it to start joining
     leeway = 2
-       
+          
+    global link
+ 
     #8:10 - 8:18:
     if hrs == 8 and mins < 10-leeway:
         link = links.morning_quran
@@ -35,7 +37,7 @@ def main(hrs, mins, day):
 
         #12:10 - 1:00
         elif hrs == 11 and mins >= 45-leeway or hrs == 12 and mins < 45-leeway: 
-            link = links.pe
+            link = links.pe_shahriar
 
         #1:45 - 3:00           
         elif hrs == 13 and mins >= 45-leeway or hrs == 14 and mins < 0-leeway:
